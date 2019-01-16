@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+// Trang quản trị
+Route::get('admin/home',function(){
+    return view('admin.users.list_user');
+});
