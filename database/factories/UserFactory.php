@@ -15,10 +15,29 @@ use Faker\Generator as Faker;
 
 $factory->define(Mobile\User::class, function (Faker $faker) {
     return [
+        'username' => $faker->unique()->userName,
         'name' => $faker->name,
+        'password' => bcrypt('123'),
+        'birthday' => $faker->date(),
+        'gender' => $faker->numberBetween(1, 2),
+        'phone' => '097161024' . $faker->numberBetween(10, 99),
         'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'address' => $faker->address,
         'remember_token' => str_random(10),
+        'created_at' => $faker->unixTime,
+        'updated_at' => $faker->unixTime,
     ];
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
