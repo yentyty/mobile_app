@@ -1,6 +1,6 @@
 <?php
 
-namespace mobile\Exceptions;
+namespace Mobile\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

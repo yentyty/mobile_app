@@ -1,6 +1,6 @@
 <?php
 
-namespace mobile\Providers;
+namespace Mobile\Providers;
 
 use Illuminate\Support\Facades\Event;
 use Illuminate\Auth\Events\Registered;
