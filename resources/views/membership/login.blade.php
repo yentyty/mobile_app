@@ -1,33 +1,28 @@
 @extends('layouts.master_login')
 @section('content')
-<h1>Mobile**Store </h1>
+<h1 style="padding:12px;">Mobile**Store </h1>
 <div class=" w3l-login-form">
     <h2>LOGIN</h2>
-    <form action="#" method="POST">
-
+    {{Form::open(['action' => 'AdminController@postlogin'])}}
         <div class=" w3l-form-group">
-            <label>Username:</label>
+            {{Form::label('username','Username:')}}
             <div class="group">
                 <i class="fas fa-user"></i>
-                <input type="text" class="form-control" placeholder="Username" required="required" />
+                {{Form::text('username','',['placeholder'=>'Username','class'=>'form-control'])}}
             </div>
         </div>
         <div class=" w3l-form-group">
-            <label>Password:</label>
+            {{Form::label('password','Password:')}}
             <div class="group">
                 <i class="fas fa-unlock"></i>
-                <input type="password" class="form-control" placeholder="Password" required="required" />
+                {{Form::password('password',['placeholder'=>'Password','class'=>'form-control'])}}
             </div>
         </div>
         <div class="forgot">
             <a href="#">Forgot Password?</a>
-            <p><input type="checkbox">Remember Me</p>
+            <p>{{Form::checkbox('remember','remember')}}Remember Me</p>
         </div>
         <button type="submit">Login</button>
-    </form>
-    <p class=" w3l-register-p">Don't have an account?<a href="#" class="register"> Register</a></p>
+    {{Form::close()}}
 </div>
-<footer>
-    <p class="copyright-agileinfo"> &copy; 2018 Material Login Form. All Rights Reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-</footer>
 @endsection

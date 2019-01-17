@@ -15,9 +15,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 // Trang quản trị
-Route::get('admin/home',function(){
-    return view('admin.users.list_user');
+
+Route::get('admin/login','AdminController@getlogin')->name('login');
+Route::post('admin/login','AdminController@postlogin');
+
+Route::group(['prefix'=>'/admin','middleware'=>'auth'],function(){
+    Route::group(['prefix'=>'home'],function(){
+        Route::get('index',function(){
+            return view('admin.home.index');
+        });
+    });
 });
-// Route::get('admin/login', 'AdminController@getlogin')->name('login');
-// Route::post('admin/login', 'AdminController@postlogin');
-Route::get('admin/login','AdminController@index')->name('login');
