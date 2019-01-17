@@ -18,3 +18,6 @@ Route::get('/', function () {
 Route::get('admin/home',function(){
     return view('admin.users.list_user');
 });
+// Route::get('admin/login', 'AdminController@getlogin')->name('login');
+// Route::post('admin/login', 'AdminController@postlogin');
+Route::get('admin/login','AdminController@index')->name('login');
