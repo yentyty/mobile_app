@@ -19,19 +19,19 @@
             </div>
           </form>
           <ul class="sidebar-menu tree" data-widget="tree">
-            <li class="treeview">
+            <li>
               <a href="#">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
-            <li class="treeview">
+            <li>
               <a href="#">
                 <i class="fa fa-laptop"></i>
                 <span>UI Elements</span>
               </a>
             </li>
-            <li class="treeview">
-              <a href="#">
+            <li>
+            <a href="{{asset('admin/logout')}}">
                 <i class="fa fa-share"></i> <span>Logout</span>
               </a>
             </li>

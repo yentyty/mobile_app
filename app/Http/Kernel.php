@@ -76,6 +76,6 @@ class Kernel extends HttpKernel
         \Illuminate\Session\Middleware\AuthenticateSession::class,
         \Illuminate\Routing\Middleware\SubstituteBindings::class,
         \Illuminate\Auth\Middleware\Authorize::class,
-        'admin' => \shoes\Http\Middleware\AdminMiddleware::class,
+        'admin' => \Mobile\Http\Middleware\AdminMiddleware::class,
     ];
 }
