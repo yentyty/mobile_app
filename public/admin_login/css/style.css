@@ -44,8 +44,9 @@ p.w3l-register-p {
 
 .group {
     display: flex;
-    padding: 15px 5px;
+    padding: 8px 5px;
     background-color: #ffffff;
+    border-radius: 12px;
 }
 
 .group i {

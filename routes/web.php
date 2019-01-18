@@ -16,10 +16,11 @@ Route::get('/', function () {
 });
 // Trang quản trị
 
-Route::get('admin/login','AdminController@getlogin')->name('login');
-Route::post('admin/login','AdminController@postlogin');
+Route::get('admin/login','AdminController@getLogin')->name('login');
+Route::post('admin/login','AdminController@postLogin');
+Route::get('admin/logout','AdminController@logout');
 
-Route::group(['prefix'=>'/admin','middleware'=>'auth'],function(){
+Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
     Route::group(['prefix'=>'home'],function(){
         Route::get('index',function(){
             return view('admin.home.index');
