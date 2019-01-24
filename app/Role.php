@@ -15,4 +15,5 @@ class Role extends Model
     public function users() {
         return $this->hasMany('Mobile\User', 'users', 'role_id', 'user_id');
     }
+
 }   

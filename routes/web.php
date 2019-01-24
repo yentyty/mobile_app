@@ -26,4 +26,11 @@ Route::group(['prefix'=>'/admin','middleware'=>['auth']],function(){
             return view('admin.home.index');
         });
     });
+    Route::group(['prefix'=>'user'],function(){
+        Route::get('listuser','UserController@getList')->name('index');
+        Route::post('adduser','UserController@postThem');
+        Route::post('update/{user_id}','UserController@postUpdate');
+        Route::get('listuser/{user_id}', 'UserController@getDelete');
+        Route::get('search', 'UserController@getSearch');
+    });
 });

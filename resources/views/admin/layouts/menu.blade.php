@@ -1,14 +1,5 @@
 <aside class="main-sidebar">
         <section class="sidebar" style="height: auto;">
-          <div class="user-panel">
-            <div class="pull-left image">
-              <img src="admin_asset/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-            </div>
-            <div class="pull-left info">
-              <p>Alexander Pierce</p>
-              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-            </div>
-          </div>
           <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
               <input type="text" name="q" class="form-control" placeholder="Search...">
@@ -20,14 +11,14 @@
           </form>
           <ul class="sidebar-menu tree" data-widget="tree">
             <li>
-              <a href="#">
+            <a href="{{asset('admin/home/index')}}">
                 <i class="fa fa-dashboard"></i> <span>Dashboard</span>
               </a>
             </li>
             <li>
-              <a href="#">
+            <a href="{{asset('admin/user/listuser')}}">
                 <i class="fa fa-laptop"></i>
-                <span>UI Elements</span>
+                <span>User</span>
               </a>
             </li>
             <li>
