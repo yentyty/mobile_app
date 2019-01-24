@@ -15,6 +15,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Mobile\User::class, function (Faker $faker) {
     return [
+        'role_id' => $faker->numberBetween(1, 4),
         'username' => $faker->unique()->userName,
         'name' => $faker->name,
         'password' => bcrypt('123'),

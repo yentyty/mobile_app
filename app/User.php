@@ -16,7 +16,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'username', 'name', 'email', 'password', 'phone', 'address', 'gender', 'birthday', 'avatar'
+       'role_id', 'username', 'name', 'email', 'password', 'phone', 'address', 'gender', 'birthday', 'avatar'
     ];
     protected $primaryKey = 'user_id';
 
@@ -28,4 +28,7 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+    public function role() {
+        return $this->hasOne('Mobile\Role');
+    }
 }

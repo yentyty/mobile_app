@@ -20,6 +20,7 @@
             @yield('content')
             @include('admin.layouts.footer')
         </div>
+        @section('script')
         <script src="admin_asset/bower_components/jquery/dist/jquery.min.js"></script>
         <script src="admin_asset/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="admin_asset/bower_components/fastclick/lib/fastclick.js"></script>
@@ -31,6 +32,6 @@
         <script src="admin_asset/bower_components/chart.js/Chart.js"></script>
         <script src="admin_asset/dist/js/pages/dashboard2.js"></script>
         <script src="admin_asset/dist/js/demo.js"></script>
-        @yield('script')
+        @show
     </body>
 </html> 
