@@ -327,7 +327,8 @@
                               @else
                               <img src="" width="150" height="150" alt="Ảnh đại diện" id="avatarup" style="display: none">
                               @endif
-                              {{ Form::file('avatar',['class'=>'fileup','style'=>'margin-bottom:12px;']) }}
+                                <input type="file" class="fileup" id="exampleInputFile" name="avatar" value="{{ old('avatar', isset($user) ? $user->avatar : '') }}">
+                              <!-- {{  Form::file('avatar',['class'=>'fileup','style'=>'margin-bottom:12px;']) }} -->
                             </div>
                           </div>
                         </div>
