@@ -17,7 +17,7 @@
             </li>
             <li>
             <a href="{{asset('admin/user/listuser')}}">
-                <i class="fa fa-laptop"></i>
+              <i class="fa fa-address-book-o" aria-hidden="true"></i>
                 <span>User</span>
               </a>
             </li>

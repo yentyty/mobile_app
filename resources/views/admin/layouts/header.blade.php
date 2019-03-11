@@ -20,20 +20,13 @@
                 <ul class="dropdown-menu">
                   <li class="user-header" style="background-color:#20B2AA;">
                     <img src="admin/avatar/@if(Auth::user()){{Auth::user()->avatar}}@endif" class="img-circle" alt="User Image">
-    
                     <p>
                         @if(Auth::user()){{Auth::user()->name}} @endif
                       <small>@if(Auth::user()){{Auth::user()->email}} @endif</small>
                       <small>@if(Auth::user()){{Auth::user()->phone}} @endif</small>
                     </p>
                   </li>
-                  <li class="user-body">
-                    <div class="row">
-                      <div class="col-xs-12 text-center">
-                        <a href="#">Sales</a>
-                      </div>
-                    </div>
-                  </li>
+                  
                   <li class="user-footer">
                     <div class="pull-left">
                       <a href="#" class="btn btn-default btn-flat">Profile</a>

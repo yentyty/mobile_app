@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="admin_asset/bower_components/jvectormap/jquery-jvectormap.css">
         <link rel="stylesheet" href="admin_asset/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
         <link rel="stylesheet" href="admin_asset/dist/css/AdminLTE.min.css">
-        <link rel="stylesheet" href="admin_asset/dist/css/skins/_all-skins.min.css">
+        <link rel="stylesheet" href="admin_asset/dist/css/skins/_all-skins.min.css">    
     </head>
     <body class=" skin-blue sidebar-mini">
         <div class="wrapper">
